@@ -13,14 +13,14 @@ public class Solution
             int y = inputAsArray[i + 1] - '0';
             if (x % 2 == y % 2 && x > y)
             {
-                swap(inputAsArray, i, i + 1);
+                Swap(inputAsArray, i, i + 1);
                 break;
             }
         }
         return string.Join("", inputAsArray);
     }
 
-    private void swap(char[] inputAsArray, int first, int second)
+    private void Swap(char[] inputAsArray, int first, int second)
     {
         char temp = inputAsArray[first];
         inputAsArray[first] = inputAsArray[second];
